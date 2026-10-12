@@ -1,0 +1,15 @@
+{
+  "name": "chat-backend-cloudflare",
+  "version": "1.0.0",
+  "description": "Real-time chat backend on Cloudflare Workers with Durable Objects and SQLite",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^3.109.2"
+  }
+}
+

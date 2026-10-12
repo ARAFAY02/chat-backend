@@ -1,0 +1,27 @@
+name: chat_demo
+description: Real-time 1-to-1 chat demo (Flutter + FastAPI WebSocket backend).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  # `provider` is only used to make the existing ChangeNotifier
+  # (ChatProvider) available to the widget tree via InheritedWidget —
+  # it is not a separate state-management paradigm, just Flutter's own
+  # recommended wiring for ChangeNotifier. dart:io's WebSocket is used
+  # directly for networking; no extra WebSocket package is added.
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

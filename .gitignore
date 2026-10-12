@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+*.DS_Store
+*.zip
+
+# Python / Backend
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.log
+backend/chat_history.db
+
+# Cloudflare Worker / Node
+cloudflare_worker/node_modules/
+cloudflare_worker/.wrangler/
+
+# Flutter / Dart
+flutter_app/.dart_tool/
+flutter_app/.flutter-plugins
+flutter_app/.flutter-plugins-dependencies
+flutter_app/.pub-cache/
+flutter_app/.pub/
+flutter_app/build/
+flutter_app/ios/Flutter/.last_build_id
+flutter_app/*.iml
+flutter_app/.idea/
